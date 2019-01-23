@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content="Selwa - usԵgi psychiatryczno-psychologiczne ݷiadczone     w ramach umowy z NFZ.">
+		<meta name="keywords" content="umowa z NFZ, NZOZ Pabianice, Selwa,     psychiatria, psychiatra, psychoterapia, psycholog, diagnoza psychologiczna">
+		<meta name="author" content="Izabela Gorzela">
+		<meta name="revised" content="Izabela Gorzela,08/04/13">
+		<meta name="generator" content="Notepad++">
+		<title>Selwa NZOZ Pabianice</title>
+		<link rel="stylesheet" href="{% static 'css/nzoz.css' %}">
+    </head>
+
+
+	<body style="background-color: lightgray; background-image: url('/static/images/gray_image.jpg'); background-repeat: no-repeat; color: gray; margin: 0; padding: 0";>
+		<div id="top">
+			<div id="NAGLOWEK">
+				<header>
+					<h1 style="font-style:italic; color: gray">SELWA</h1>
+				</header>
+			</div>
+			<div id="Nawigacja">
+				<ul id="MENU_1">
+					<li><a href="{% url 'rejestracja_index' %}">Home<span>Home</span></a></li>
+					<li><a href="{% url 'rejestracja_por_psychologiczna' %}">Poradnia&nbsp;psychologiczna<span>Poradnia&nbsp;psychologiczna</span></a></li>
+					<li><a href="{% url 'rejestracja_por_psychiatryczna' %}">Poradnia psychiatryczna<span>Poradnia psychiatryczna</span></a></li>
+					<li><a href="{% url 'rejestracja_lokalizacja' %}">Lokalizacja<span>Lokalizacja</span></a></li>
+				</ul>
+			</div>
+			<h3>Rejestracja</h3>
+			<div id="TABLE">
+				<table>
+					<tr>
+						<th></th>
+						<th>Godziny pracy</th>
+					</tr>
+					{% for schedule in schedules %}
+					<tr>
+						<td>{{ schedule.day }}</td>
+						<td>{{ schedule.hourFrom }} {{ schedule.hourTo }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

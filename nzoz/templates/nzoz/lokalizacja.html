@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content="Selwa - usԵgi psychiatryczno-psychologiczne ݷiadczone     w ramach umowy z NFZ.">
+		<meta name="keywords" content="umowa z NFZ, NZOZ Pabianice, Selwa,     psychiatria, psychiatra, psychoterapia, psycholog, diagnoza psychologiczna">
+		<meta name="author" content="Izabela Gorzela">
+		<meta name="revised" content="Izabela Gorzela,08/04/13">
+		<meta name="generator" content="Notepad++">
+		<title>Selwa NZOZ Pabianice</title>
+		<link rel="stylesheet" href="{% static 'css/nzoz.css' %}">
+    </head>
+
+
+	<body style="background-color: lightgray; background-image: url('/static/images/gray_image.jpg'); background-repeat: no-repeat; color: gray; margin: 0; padding: 0";>                          <!--uklad strony oparty na div-->
+		<div id="top">
+			<div id="NAGLOWEK">
+				<header>
+					<h1 style="font-style:italic; color: gray">SELWA</h1>
+				</header>
+			</div>
+			<div id="Nawigacja">
+				<ul id="MENU_1">
+					<li><a href="{% url 'lokalizacja_index' %}">Home<span>Home</span></a></li>
+					<li><a href="{% url 'lokalizacja_por_psychologiczna' %}">Poradnia&nbsp;psychologiczna<span>Poradnia&nbsp;psychologiczna</span></a></li>
+					<li><a href="{% url 'lokalizacja_por_psychiatryczna' %}">Poradnia&nbsp;psychiatryczna<span>Poradnia&nbsp;psychiatryczna</span></a></li>
+					<li><a href="{% url 'lokalizacja_rejestracja' %}">Rejestracja<span>Rejestracja</span></a></li>
+				</ul>
+			</div>
+			<div id="TRESC_1">
+				<p style="font-style: italic; color: gray">Nasza lokalizacja</p>
+			</div>
+			<div id="DANE_1">
+				<p style="font-style: italic; color:gray"><acronym lang="pl" title="Niepubliczny Zakład Opieki Zdrowotnej">NZOZ</acronym> SELWA<br><br>ul: Pułaskiego 21<br>Pabianice 95-200<br><br>tel: 227 15 11</p>
+			</div>
+			<div id="MAPA">
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Pu%C5%82askiego+21+Pabianice&amp;aq=&amp;sll=54.163242,18.17425&amp;sspn=1.682057,3.488159&amp;ie=UTF8&amp;hq=&amp;hnear=Kazimierza+Pu%C5%82askiego+21,+Pabianice,+pabianicki,+%C5%82%C3%B3dzkie&amp;t=m&amp;ll=51.667551,19.353619&amp;spn=0.018632,0.036564&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.pl/maps?f=q&amp;source=embed&amp;hl=pl&amp;geocode=&amp;q=Pu%C5%82askiego+21+Pabianice&amp;aq=&amp;sll=54.163242,18.17425&amp;sspn=1.682057,3.488159&amp;ie=UTF8&amp;hq=&amp;hnear=Kazimierza+Pu%C5%82askiego+21,+Pabianice,+pabianicki,+%C5%82%C3%B3dzkie&amp;t=m&amp;ll=51.667551,19.353619&amp;spn=0.018632,0.036564&amp;z=14&amp;iwloc=A" style="color: gray;text-align:left">Wyświetl większą mapę</a></small>
+			</div>
+
+        </div>
+	</body>
+</html>

@@ -33,6 +33,8 @@ class Schedule(models.Model):
     day = models.ForeignKey(Day, on_delete=models.CASCADE)
     clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE)
 
-    
+
+
+
 
 
